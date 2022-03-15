@@ -1,11 +1,14 @@
 import React from 'react';
+import './TodoItem.css';
 
 function TodoItem(props) {
+
     return (
-        <section>
+        <section className="TodoItem">
+            <input 
+            type="checkBox" 
+            />
             <p>Title: {props.text}</p>
-            <p>Completed: {props.completed ? 'Yes' : 'No'}</p>
-            <hr></hr>
         </section>
     )
 }

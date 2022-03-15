@@ -1,0 +1,23 @@
+.TitleTodoCounter{
+    font-size: 35px;
+    color: white;
+    text-align: left;
+
+}
+h2.TitleTodoCounter{
+    font-size: 72px;
+    background:-webkit-linear-gradient(20deg, rgb(243, 242, 242), rgb(154, 10, 211) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+
+}
+
+.TodoCounter{
+    font: size 13px;
+    text-align: center;
+    margin-top: 1px;
+
+}
