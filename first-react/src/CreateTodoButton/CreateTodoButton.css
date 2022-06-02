@@ -9,4 +9,5 @@
     height: 40px;
     position:absolute;
     text-align: center;
+    z-index: 1;
 }
