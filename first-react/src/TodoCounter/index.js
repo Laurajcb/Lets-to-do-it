@@ -8,6 +8,7 @@ function TodoCounter() {
   
   return (
     <>
+    <h1 className="TitleTodoCounter"> Your tasks</h1>
     <h2 className="TodoCounter">{completedTodos} of {totalTodos} ToDos completed ✅</h2>
     </>
   );

@@ -1,0 +1,5 @@
+.MainSection{
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+}

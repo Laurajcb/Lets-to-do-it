@@ -20,7 +20,7 @@ function AppUI() {
   } = React.useContext(TodoContext);
 
   return (
-    <React.Fragment>
+    <section className='mainSection'>
       <TodoCounter />
       <TodoSearch />
       <TodoList>
@@ -45,7 +45,7 @@ function AppUI() {
         </Modal>
       )}
       <CreateTodoButton setOpenModal={setOpenModal} />
-    </React.Fragment>
+    </section>
   );
 }
 export { AppUI };
