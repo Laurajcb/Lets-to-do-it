@@ -1,12 +1,4 @@
-.sectionTodoList{
-    margin-left:15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-style: double;
-    border: solid;
-    padding: 2px 15px;
-    border-radius: 11px;
-    border-color: plum;
-    width: 580px;
-    border-width: 3px;
+.sectionTodoList {
+    width: 973px;
+    height: 705px;
 }

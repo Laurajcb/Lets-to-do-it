@@ -7,6 +7,10 @@ import { TodoItem } from "../TodoItem";
 import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from "../Modal";
 import { TodoForm } from "../TodoForm";
+import { TodoError } from "../TodoError";
+import { TodosLoading } from "../TodosLoading";
+import { EmptyTodos } from "../EmptyTodos";
+import "./AppUI.css";
 
 function AppUI() {
   const {
@@ -16,36 +20,35 @@ function AppUI() {
     completeTodo,
     deleteTodo,
     openModal,
-    setOpenModal,
   } = React.useContext(TodoContext);
 
   return (
-    <section className='mainSection'>
-      <TodoCounter />
-      <TodoSearch />
-      <TodoList>
-        {error && <p>Desespérate,hubo un error...</p>}
-        {loading && <p>Estamos cargando,no desesperes...</p>}
-        {!loading && !searchedTodos.length && (
-          <p>¡Let's create the first To do!</p>
-        )}
-        {searchedTodos.map((todo) => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        ))}
-      </TodoList>
-      {!!openModal && (
-        <Modal>
-          <TodoForm/>
-        </Modal>
-      )}
-      <CreateTodoButton setOpenModal={setOpenModal} />
-    </section>
+    <React.Fragment>
+      <main>
+        <section className="create-task">
+          <TodoForm />
+        </section>
+        <section className="to-do-section">
+          <TodoCounter />
+          <TodoSearch />
+          <TodoList>
+            {error && <TodoErro error={error} />}
+            {loading && <TodosLoading />}
+            {!loading && !searchedTodos.length && <EmptyTodos />}
+
+            {searchedTodos.map((todo) => (
+              <TodoItem
+                key={todo.text}
+                text={todo.text}
+                completed={todo.completed}
+                onComplete={() => completeTodo(todo.text)}
+                onDelete={() => deleteTodo(todo.text)}
+              />
+            ))}
+          </TodoList>
+        </section>
+      </main>
+    </React.Fragment>
   );
 }
 export { AppUI };

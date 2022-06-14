@@ -1,17 +1,35 @@
-.TitleTodoCounter{
-    font-size: 35px;
-    color: rgb(8, 8, 8);
-    text-align: right;
+.TitleTodoCounter {
+    width: 259px;
+    height: 53px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 78px;
+    /* or 142% */
+    color: rgba(238, 117, 61, 0.97);
+
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(4px);
 
 }
-h2.TodoCounter{
-    margin-top: 1px;
-    margin-bottom: 1px;
-    text-align: right;
 
+h2.TodoCounter {
+    /* Completed 3 of 5 */
+    width: 306px;
+    height: 46px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 78px;
+    /* or 300% */
+    color: #EFC29C;
 }
 
-.TodoCounter{
+.TodoCounter {
     font: size 13px;
     text-align: center;
     margin-top: 1px;

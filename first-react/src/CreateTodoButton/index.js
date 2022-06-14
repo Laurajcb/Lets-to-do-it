@@ -1,9 +1,9 @@
 import React from 'react';
 import './CreateTodoButton.css';
 
-function CreateTodoButton(props) {
+function AddNewTodoButton(props) {
   const onClickButton = () => {
-    props.setOpenModal(prevState => !prevState);
+   return 0
   };
   
   return (
@@ -16,8 +16,4 @@ function CreateTodoButton(props) {
   );
 }
 
-export { CreateTodoButton };
-
-
-//z-index: 1; at css
-//es necesario aca para poder cambiar el modal  
+export { AddNewTodoButton };
