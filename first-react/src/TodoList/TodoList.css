@@ -1,4 +1,5 @@
-.sectionTodoList {
+.list-todo {
+    display: flex;
     width: 973px;
     height: 705px;
 }

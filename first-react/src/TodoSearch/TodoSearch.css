@@ -1,12 +1,18 @@
-.inputTodoSearch {
+.search-var{ 
+    margin-top: 80px;
+}
+
+.input-todo-search {
     /* Search field */
     box-sizing: border-box;
     width: 321px;
     height: 40px;
-
     background: #FFFEF8;
     border: 2px solid rgba(238, 117, 61, 0.32);
     backdrop-filter: blur(4px);
-    
     border-radius: 10px;
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    margin-left: 40px;
 }

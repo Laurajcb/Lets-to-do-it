@@ -8,8 +8,10 @@ function TodoCounter() {
   
   return (
     <>
-    <h1 className="TitleTodoCounter"> Your tasks</h1>
-    <h2 className="TodoCounter">Completed {completedTodos} of {totalTodos}</h2>
+    <section className='counter-tittles'>
+    <h1 className="title-todo-counter"> Your tasks</h1>
+    <h2 className="todo-counter">Completed {completedTodos} of {totalTodos}</h2>
+    </section>
     </>
   );
 }

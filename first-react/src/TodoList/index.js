@@ -5,7 +5,7 @@ import "./TodoList.css";
 function TodoList(props) {
   const todos = props.todos;
   return (
-    <section>
+    <section className="list-todo">
       <ul>{props.children}</ul>
     </section>
   );

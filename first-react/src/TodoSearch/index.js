@@ -9,12 +9,14 @@ function TodoSearch() {
     setSearchValue(event.target.value);
   };
   return (
-    <input
-      className="inputTodoSearch"
-      placeholder="Search..."
-      value={searchValue}
-      onChange={onSearchValueChange}
-    />
+    <div className="search-var">
+      <input
+        className="input-todo-search"
+        placeholder="Search..."
+        value={searchValue}
+        onChange={onSearchValueChange}
+      />
+    </div>
   );
 }
 

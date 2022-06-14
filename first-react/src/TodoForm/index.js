@@ -22,14 +22,18 @@ function TodoForm() {
       </div>
       <form onSubmit={onSubmit}>
         <div className="create-task-input">
-          <label>Task name</label>
-          <input
-            className="place-holder-field"
-            placeholder="Type your new To do"
-            type="text"
-            value={newTodoValue}
-            onChange={onChange}
-          />
+          <div className="label">
+            <label>Task name</label>
+          </div>
+          <div className="input">
+            <input
+              className="place-holder-field"
+              placeholder="Type your new To do"
+              type="text"
+              value={newTodoValue}
+              onChange={onChange}
+            />
+          </div>
         </div>
         <div className="button-summit">
           <button type="submit" className="button-create-task">
@@ -38,11 +42,7 @@ function TodoForm() {
         </div>
       </form>
       <div className="img-create-task">
-        <object
-          data="../assets/img/wfh_1.svg"
-          width="562px"
-          heigh="950px"
-        ></object>
+        <img src="../assets/img/wfh_1.svg" />
       </div>
     </section>
   );

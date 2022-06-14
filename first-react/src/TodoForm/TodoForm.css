@@ -1,6 +1,6 @@
 .create-task-section {
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .create-task-input {
@@ -8,7 +8,7 @@
 }
 
 .create-your-task-tittle {
-    width: 301px;
+    width: 330px;
     height: 33px;
 }
 
@@ -25,29 +25,34 @@
 
 }
 
-.create-new-task {
-    width: 315px;
-    height: 33px;
+.input {
+    margin-top: -20px;
+}
 
-    font-family: 'Inter';
+.label {
+    size: 15px;
+}
+.create-new-task {
+    width: 351px;
+    height: 33px;
     font-style: normal;
     font-weight: 600;
     font-size: 31px;
     line-height: 35px;
     letter-spacing: 0.04em;
     color: #815E75;
+    margin-top: 70px;
 }
 
-.main-img {
+.img-create-task {
     width: 562px;
     height: 950px;
-    margin-top: -260px;
-    margin-left: -89px;
+    margin-left: -90px;
 }
 
 .create-task-input input {
     box-sizing: border-box;
-    width: 366px;
+    width: 351px;
     height: 40px;
     background: rgba(200, 230, 238, 0.26);
     border-radius: 10px;
