@@ -8,12 +8,13 @@
     font-style: normal;
     font-weight: 800;
     font-size: 55px;
-    line-height: 78px;
+    line-height: 90px;
     color: rgba(238, 117, 61, 0.97);
     mix-blend-mode: multiply;
     backdrop-filter: blur(4px);
     margin-top: 63px;
     margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 h2.todo-counter {
@@ -32,6 +33,5 @@ h2.todo-counter {
 .todo-counter {
     font: size 13px;
     text-align: center;
-    margin-top: 1px;
-
+    margin-bottom: -31px;
 }
