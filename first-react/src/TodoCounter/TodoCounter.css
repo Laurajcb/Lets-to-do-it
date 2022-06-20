@@ -1,10 +1,9 @@
 .counter-tittles {
     justify-content: center;
+    text-align: center;
 }
 
 .title-todo-counter {
-    width: 290px;
-    height: 53px;
     font-style: normal;
     font-weight: 800;
     font-size: 55px;
@@ -12,26 +11,18 @@
     color: rgba(238, 117, 61, 0.97);
     mix-blend-mode: multiply;
     backdrop-filter: blur(4px);
-    margin-top: 63px;
-    margin-left: 40px;
-    margin-bottom: 40px;
 }
 
 h2.todo-counter {
     /* Completed 3 of 5 */
-    width: 306px;
-    height: 46px;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
     line-height: 78px;
     color: #EFC29C;
-    margin-top: -35px;
-    margin-left: 40px;
 }
 
 .todo-counter {
-    font: size 13px;
+    font-size:  13px;
     text-align: center;
-    margin-bottom: -31px;
 }

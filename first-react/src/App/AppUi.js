@@ -25,10 +25,11 @@ function AppUI() {
   return (
     <React.Fragment>
       <main>
-        <section className="create-task">
+        <section className="create-task-section">
           <TodoForm />
         </section>
         <section className="to-do-section">
+          <section className="to-do-section-container">
           <TodoCounter />
           <TodoSearch />
           <TodoList>
@@ -46,6 +47,7 @@ function AppUI() {
               />
             ))}
           </TodoList>
+          </section>
         </section>
       </main>
     </React.Fragment>

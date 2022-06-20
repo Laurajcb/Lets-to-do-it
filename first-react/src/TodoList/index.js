@@ -6,7 +6,7 @@ function TodoList(props) {
   const todos = props.todos;
   return (
     <section className="list-todo">
-      <ul>{props.children}</ul>
+      <ul className="list-todo-container">{props.children}</ul>
     </section>
   );
 }

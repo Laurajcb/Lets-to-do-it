@@ -16,7 +16,9 @@ function TodoItem(props) {
       >
         {props.text}
       </p>
-      <span className="Icon Icon-delete" onClick={props.onDelete}></span>
+      <span className="Icon Icon-delete" onClick={props.onDelete}>
+        🗑
+      </span>
     </li>
   );
 }

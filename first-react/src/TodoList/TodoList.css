@@ -1,5 +1,7 @@
 .list-todo {
     display: flex;
-    width: 973px;
-    height: 705px;
+
+}
+.list-todo-container {
+    width: 100%;
 }

@@ -10,7 +10,7 @@ function TodoCounter() {
     <>
     <section className='counter-tittles'>
     <h1 className="title-todo-counter"> Your tasks</h1>
-    <h2 className="todo-counter">Completed {completedTodos} of {totalTodos}</h2>
+    <h2 className="todo-counter">{`Completed ${completedTodos} of ${totalTodos}`}</h2>
     </section>
     </>
   );

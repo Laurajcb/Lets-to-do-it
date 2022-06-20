@@ -5,7 +5,7 @@
 .input-todo-search {
     /* Search field */
     box-sizing: border-box;
-    width: 321px;
+    width: 100%;
     height: 40px;
     background: #FFFEF8;
     border: 2px solid rgba(238, 117, 61, 0.32);
@@ -14,6 +14,5 @@
     padding-left: 25px;
     background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
     background-size: 20px;
-    margin-left: 40px;
     margin-top: 7px;
 }
