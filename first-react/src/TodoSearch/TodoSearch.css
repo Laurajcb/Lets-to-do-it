@@ -1,5 +1,5 @@
-.search-var{ 
-    margin-top: 80px;
+.search-var {
+    margin-top: 30px;
 }
 
 .input-todo-search {
@@ -12,7 +12,14 @@
     backdrop-filter: blur(4px);
     border-radius: 10px;
     padding-left: 25px;
-    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background: no-repeat left;
     background-size: 20px;
     margin-top: 7px;
+}
+
+.search-icon {
+    position: relative;
+    top: 42px;
+    left: 5px;
+
 }

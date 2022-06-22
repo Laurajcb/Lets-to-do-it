@@ -1,5 +1,6 @@
 import React from "react";
 
+// TODO: Hook to manage local storage
 function useLocalStorage(itemName, initialValue) {
   const [error, setError] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
@@ -24,7 +25,7 @@ function useLocalStorage(itemName, initialValue) {
         setError(error);
       }
     }, 1000);
-  });
+  }, []);
 
   const saveItem = (newItem) => {
     try {
@@ -35,6 +36,7 @@ function useLocalStorage(itemName, initialValue) {
       setError(error);
     }
   };
+
   return {
     item,
     saveItem,

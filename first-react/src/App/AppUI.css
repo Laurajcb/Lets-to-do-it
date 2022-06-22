@@ -1,6 +1,6 @@
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -13,6 +13,19 @@ main {
     order: 1;
     margin-bottom: 40px;
   }
+}
+
+.progress-bar-section{
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.main-content-section{
+  display: flex;
+  flex-direction: row;
 }
 
 .to-do-section {

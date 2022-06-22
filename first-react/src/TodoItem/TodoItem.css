@@ -54,6 +54,7 @@
 
 .Icon-check--active {
     color: #C0E1D7;
+    align-items: center;
 }
 
 .Icon-delete {

@@ -4,6 +4,9 @@ import { useLocalStorage } from "./useLocalStorage";
 
 const TodoContext = React.createContext();
 
+// TODO: Study about context, providers, how and why use it?
+// Props drilling
+
 function TodoProvider(props) {
   const {
     item: todos,
@@ -15,7 +18,7 @@ function TodoProvider(props) {
   const [searchValue, setSearchValue] = React.useState("");
   const [openModal, setOpenModal ] = React.useState(false);
 
-  const completedTodos = todos.filter((todo) => !!todo.completed).length;
+  const completedTodos = todos.filter((todo) => todo.completed).length;
   const totalTodos = todos.length;
   
   let searchedTodos = [];
@@ -28,6 +31,7 @@ function TodoProvider(props) {
       return todoText.includes(searchText);
     });
   }
+
   const addTodo = (text) => {
     const newTodos = [...todos];
     newTodos.push({
@@ -36,6 +40,7 @@ function TodoProvider(props) {
     });
     saveTodos(newTodos);
   };
+
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex((todo) => todo.text === text);
     const newTodos = [...todos];

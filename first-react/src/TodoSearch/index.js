@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TodoContext } from "../TodoContext";
+import { FcSearch } from "react-icons/fc";
 import "./TodoSearch.css";
 
 function TodoSearch() {
@@ -8,8 +9,12 @@ function TodoSearch() {
     console.log(event.target.value);
     setSearchValue(event.target.value);
   };
+
   return (
     <div className="search-var">
+      <span className="search-icon">
+        <FcSearch size="22px" />
+      </span>
       <input
         className="input-todo-search"
         placeholder="Search..."

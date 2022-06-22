@@ -1,23 +1,25 @@
 import React from "react";
-import { FaSun } from "react-icons/fa";
+import { FcCheckmark } from "react-icons/fc";
 import "./TodoItem.css";
 
 function TodoItem(props) {
+  const { completed, text } = props;
+
   return (
-    <li className={`todo-item ${props.completed && "todo-item--complete"}`}>
+    <li className={`todo-item ${completed && "todo-item--complete"}`}>
       <span
-        className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
+        className={`Icon Icon-check ${completed && "Icon-check--active"}`}
         onClick={props.onComplete}
       >
-        <FaSun />
+        {completed && ( <FcCheckmark />)}
       </span>
       <p
-        className={`todo-item-p ${props.completed && "todo-item-p--complete"}`}
+        className={`todo-item-p ${completed && "todo-item-p--complete"}`}
       >
-        {props.text}
+        {text}
       </p>
       <span className="Icon Icon-delete" onClick={props.onDelete}>
-        🗑
+        X
       </span>
     </li>
   );
