@@ -11,17 +11,25 @@ import { TodoError } from "../TodoError";
 import { TodosLoading } from "../TodosLoading";
 import { EmptyTodos } from "../EmptyTodos";
 import { TodoProgress } from "../TodoProgress";
+import { TodoBadges } from "../TodoBadges";
 import "./AppUI.css";
 
 function AppUI() {
-  const { error, loading, searchedTodos, completeTodo, deleteTodo, openModal } =
-    React.useContext(TodoContext);
+  const {
+    error,
+    loading,
+    searchedTodos,
+    changeTodo,
+    deleteTodo,
+    open,
+    setOpen,
+  } = React.useContext(TodoContext);
 
   return (
     <React.Fragment>
       <main>
         <section className="progress-bar-section">
-          <TodoProgress/>
+          <TodoProgress setOpen={setOpen} />
         </section>
         <section className="main-content-section">
           <section className="create-task-section">
@@ -38,10 +46,10 @@ function AppUI() {
 
                 {searchedTodos.map((todo, index) => (
                   <TodoItem
-                    key={`${todo.text}-${index}`}
+                    key={`${todo.id}`}
                     text={todo.text}
                     completed={todo.completed}
-                    onComplete={() => completeTodo(todo.text)}
+                    onComplete={() => changeTodo(todo.text)}
                     onDelete={() => deleteTodo(todo.text)}
                   />
                 ))}
