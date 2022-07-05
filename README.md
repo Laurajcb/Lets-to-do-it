@@ -33,3 +33,5 @@ The Font used in the project was :
 font-family: 'Inter', -apple-system, BlinkMacSystemFont, averts, 'Helvetica Neue',
     sans-serif;
 ```
+
+![myresultpage.png](../react-platzi/react-project/src/assets/img/localhost_3000_.png)
