@@ -34,4 +34,4 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, averts, 'Helvetica Neue
     sans-serif;
 ```
 
-![myresultpage.png](../react-platzi/react-project/src/assets/img/localhost_3000_.png)
+![myresultpage.png](../react-platzi/react-project/public/assets/img/localhost_3000_.png)
