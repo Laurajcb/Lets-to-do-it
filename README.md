@@ -25,7 +25,7 @@ Each color was picked with a proposal based on psychology theory
 
  
 
-![palette.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73b7a64f-49c4-4852-b2ee-b147b71cd88d/palette.png)
+![palette.png](../react-platzi/react-project/public/assets/img/palette.png)
 
 The Font used in the project was : 
 
@@ -34,4 +34,4 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, averts, 'Helvetica Neue
     sans-serif;
 ```
 
-![myresultpage.png](../react-platzi/react-project/public/assets/img/localhost_3000_.png)
+![localhost_3000_.png](../react-platzi/react-project/public/assets/img/localhost_3000_.png)
