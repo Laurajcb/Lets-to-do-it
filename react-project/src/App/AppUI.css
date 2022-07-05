@@ -4,18 +4,8 @@ main {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1028px) {
-  main {
-    flex-direction: column;
-  }
 
-  .to-do-section { 
-    order: 1;
-    margin-bottom: 40px;
-  }
-}
-
-.progress-bar-section{
+.progress-bar-section {
   display: flex;
   height: 40px;
   align-items: center;
@@ -23,7 +13,7 @@ main {
   margin-right: 20px;
 }
 
-.main-content-section{
+.main-content-section {
   display: flex;
   flex-direction: row;
 }
@@ -31,7 +21,7 @@ main {
 .to-do-section {
   flex: 5;
   display: flex;
-  align-items: center;
+  margin-top: 35px;
   justify-content: center;
 }
 
@@ -41,4 +31,20 @@ main {
   justify-content: center;
   align-items: center;
   width: 400px;
+}
+
+@media only screen and (max-width: 1028px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main-content-section {
+    flex-direction: column;
+  }
+
+  .to-do-section {
+    order: 1;
+    margin-bottom: 40px;
+    min-width: 500px;
+  }
 }

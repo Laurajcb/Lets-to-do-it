@@ -5,7 +5,8 @@ import "./styles.css"
 function TodoBadges() {
     const { completedTodos } = React.useContext(TodoContext);
     const badges = [
-        { id: 'one', image: 'one.png', goal: 1 },
+        { id: 'zero', image: 'zero.png', goal: 1 },
+        { id: 'one', image: 'one.png', goal: 2 },
         { id: 'two', image: 'two.png', goal: 3 },
         { id: 'three', image: 'three.jpg', goal: 5 },
         { id: 'four', image: 'four.png', goal: 10 },

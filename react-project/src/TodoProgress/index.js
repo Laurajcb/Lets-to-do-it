@@ -18,7 +18,7 @@ function TodoProgress(props) {
     <>
       <div className="progress-button box">
         <label className="progress-label" onClick={onClick}>
-          Check your progress:
+          Check your progress :
         </label>
       </div>
       <Drawer anchor="right"
@@ -27,7 +27,6 @@ function TodoProgress(props) {
       >
         <TodoBadges />
       </Drawer>
-
       <progress id="file" value={`${completedTodos}`} max={`${totalTodos}`}></progress>
     </>
   );

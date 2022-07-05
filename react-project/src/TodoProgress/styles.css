@@ -5,6 +5,8 @@
 label {
     margin-right: 10px;
     z-index: 1;
+    font-weight: 600;
+    color: #0fa3ed;
 }
 
 .box {

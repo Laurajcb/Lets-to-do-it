@@ -20,7 +20,7 @@ function TodoForm() {
     <section className="create-task">
       <section className="create-task-form-container">
         <div className="create-your-task-tittle">
-          <h3 className="create-new-task">Create Your new task</h3>
+          <h3 className="create-new-task">Create your new task</h3>
         </div>
         <form onSubmit={onSubmit}>
           <div className="create-task-input">

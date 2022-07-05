@@ -4,8 +4,9 @@
 }
 
 html {
-  background: url(./assets/img/imgBg.png);
+  background:  url(./assets/img/imgBg\ copy.png);
   background-position: center center;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
