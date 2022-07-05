@@ -30,7 +30,7 @@ function TodoForm() {
             <div className="input">
               <input
                 className="place-holder-field"
-                placeholder="Type your new To do"
+                placeholder="Type your new To do here"
                 type="text"
                 value={newTodoValue}
                 onChange={onChange}
