@@ -5,9 +5,9 @@
     align-items: center;
     margin-top: 24px;
     height: 52px;
+    width: 400px;
     background: rgba(247, 143, 57, 0.361);
     border-radius: 10px;
-
 }
 
 .todo-item li {
