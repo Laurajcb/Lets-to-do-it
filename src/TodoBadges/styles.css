@@ -1,0 +1,44 @@
+.badges-main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 40vw;
+    max-width: 40vw;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+
+.badges-section {
+    border-radius: 1px;
+}
+
+.badge-img {
+    width: 120px;
+    height: 120px;
+}
+
+.badge-box {
+    flex: 1;
+}
+
+.overlay {
+    position: absolute;
+    width: 140px;
+    height: 130px;
+    background-color:rgb(255 255 255 / 95%);
+    display: none;
+}
+
+.disabled .overlay {
+    display: block;
+}
+
+.badges-tittle {
+    color : #815E75;
+    align-items: center;
+    margin: 20px;
+
+}

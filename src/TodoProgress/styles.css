@@ -1,0 +1,47 @@
+.progress-label {
+    cursor: pointer;
+}
+
+label {
+    margin-right: 10px;
+    z-index: 1;
+    font-weight: 600;
+    color: #0fa3ed;
+}
+
+.box {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.progress-button::before {
+    border-bottom: 3px solid #FFF;
+    border-left: 0;
+    transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+}
+
+​.progress-button::after {
+    border-top: 0;
+    border-right: 0;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.box:hover {
+    border-bottom: 2px solid rgb(242, 127, 18);
+}
+
+.box:hover::after,
+.box:hover::before {
+    -webkit-transform: scale(1);
+}
+
+.progress-container {
+    min-width: 40vw;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: block;
+}

@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.progress-bar-section {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.main-content-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.to-do-section {
+  flex: 5;
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+}
+
+
+.todo-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+@media only screen and (max-width: 1028px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main-content-section {
+    flex-direction: column;
+  }
+
+  .to-do-section {
+    order: 1;
+    margin-bottom: 40px;
+    min-width: 500px;
+  }
+}
