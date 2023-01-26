@@ -23,7 +23,7 @@ On the terminal type:
 - Ready to use the aplication!
 
 
-![example1.png](https://github.com/Laurajcb/Lets-to-do-it/blob/master/react-project/src/assets/img/example1.png)
+![example1.png](https://github.com/Laurajcb/Lets-to-do-it/blob/main/public/assets/img/localhost_3000_.png)
 
 ## Bugs
 No known bugs at this time.
